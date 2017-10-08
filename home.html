@@ -85,46 +85,27 @@
     <li class="page-1  active">
       <section class="playLists ">
         <h2 class="sectionTitle">推荐歌单</h2>
-        <ol class="songs">
-          <li>
-            <div class="cover">
-              <img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>
-            </div>
-            <p>我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</p>
-          </li>
-          <li>
-            <div class="cover">
-              <img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>
-            </div>
-            <p>我是文字我是文字我是文字我是文字</p>
-          </li>
+        <ol class="songs" id="coverList">
 
-          <li>
-            <div class="cover">
-              <img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>
-            </div>
-            <p>我是文字我是文字我是文字我是文字</p>
-          </li>
+          <!--<li>-->
+            <!--<div class="cover">-->
+              <!--<div class="amount">-->
+                <!--<svg class="icon" aria-hidden="true">-->
+                  <!--<use xlink:href="#icon-Earphone"></use>-->
+                <!--</svg>-->
+                <!--<p>165.1万</p>-->
+              <!--</div>-->
+              <!--<img src="http://ww1.sinaimg.cn/large/d6c04639gy1fkb9t2h424j206u06uaa1.jpg" alt="封面"/>-->
+            <!--</div>-->
+            <!--<p>我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</p>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<div class="cover">-->
+              <!--<img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>-->
+            <!--</div>-->
+            <!--<p>我是文字我是文字我是文字我是文字</p>-->
+          <!--</li>-->
 
-          <li>
-            <div class="cover">
-              <img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>
-            </div>
-            <p>我是文字我是文字我是文字我是文字</p>
-          </li>
-
-          <li>
-            <div class="cover">
-              <img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>
-            </div>
-            <p>我是文字我是文字我是文字我是文字</p>
-          </li>
-          <li>
-            <div class="cover">
-              <img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>
-            </div>
-            <p>我是文字我是文字我是文字我是文字</p>
-          </li>
 
 
         </ol>
@@ -132,6 +113,7 @@
       <section class="songs">
         <h2 class="sectionTitle">最新音乐</h2>
         <ol class="list" id="songs">
+
           <!--<li>-->
             <!--<h3>Pray-->
               <!--<small></small>-->
@@ -148,7 +130,7 @@
               <!--</svg>-->
             <!--</a>-->
           <!--</li>-->
-          <div  id="songs-loading" class="square-spin" style="margin: 0 auto; width: 50px ;"><div style="border-color: #D43E33;"></div></div>
+          <!--<div  id="songs-loading" class="square-spin" style="margin: 0 auto; width: 50px ;"><div style="border-color: #D43E33;"></div></div>-->
         </ol>
       </section>
       <section class="Art">
@@ -216,11 +198,14 @@
       </section>
     </li>
     <li class="page-2">page-2</li>
-    <li class="page-3">page-3</li>
+    <li class="page-3">
+      <input type="text" id="search" style="background: #888888">
+      <ol id="searchResult"></ol>
+    </li>
   </ol>
 
 </div>
-<script src="//at.alicdn.com/t/font_434278_0aomglrsa2xrbe29.js"></script>
+<script src="//at.alicdn.com/t/font_434278_nyvekbuq65pzaor.js"></script>
 <script src="./vendors/jquery.min.js"></script>
 <script src="./vendors/av-min.js"></script>
 
@@ -242,6 +227,78 @@
         appId: APP_ID,
         appKey: APP_KEY
     });
+
+
+
+//    let songList = AV.Object.extend('PlayList');
+//
+//    let cover1 = new songList();
+//    cover1.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover1.jpeg');
+//    cover1.set('text','『流光美人』香港电影十二钗');
+//    cover1.set('playAmount','165.1万');
+//
+//    let cover2 = new songList();
+//    cover2.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover2.jpeg');
+//    cover2.set('text','令人智熄·让人智力骤减的BGM');
+//    cover2.set('playAmount','65.1万');
+//
+//    let cover3 = new songList();
+//    cover3.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover3.jpeg');
+//    cover3.set('text','「华语」哭泣使人乞讨，思念使人奔跑');
+//    cover3.set('playAmount','547.7万');
+//
+//    let cover4 = new songList();
+//    cover4.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover4.jpeg');
+//    cover4.set('text','华语 | 我可以忘记一切，却忘不了你的出现');
+//    cover4.set('playAmount','1111.7万');
+//
+//    let cover5 = new songList();
+//    cover5.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover5.jpeg');
+//    cover5.set('text','想撩妹？用这单就够了');
+//    cover5.set('playAmount','1071.7万');
+//
+//    let cover6 = new songList();
+//    cover6.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover6.jpeg');
+//    cover6.set('text','纯音乐｜安静的午后，和钢琴跳支舞吧');
+//    cover6.set('playAmount','69.5万');
+//
+//    let coverList = [cover1,cover2,cover3,cover4,cover5,cover6];
+//    AV.Object.saveAll(coverList);
+
+
+
+
+
+//render playList
+
+    let $coverList = $('ol#coverList');
+
+    let query1 = new AV.Query('PlayList');
+    query1.find().then(function (results) {
+        for(let i = 0 ;i <results.length;i++){
+            let eachCover = (results[i].attributes);
+
+            let li = `
+            <li>
+            <div class="cover">
+              <div class="amount">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-Earphone"></use>
+                </svg>
+                <p>${eachCover.playAmount}</p>
+              </div>
+              <img src="${eachCover.imgUrl}" alt="封面"/>
+            </div>
+            <p>${eachCover.text}</p>
+          </li>
+            `;
+
+            $coverList.append(li);
+        }
+    }, function (error) {
+    });
+
+
 
 //    let songObject = AV.Object.extend('Song');
 //    let song1 = new songObject();
@@ -296,8 +353,9 @@
 //    song10.set('url','http://oxhnvl06y.bkt.clouddn.com/%20%E9%9D%9E%E9%85%8B-%E8%96%9B%E6%98%8E%E5%AA%9B,%E6%9C%B1%E8%B4%BA%20.mp3');
 //    let songs =[song1,song2,song3,song4,song5,song6,song7,song8,song9,song10];
 //    AV.Object.saveAll(songs);
-    let $olSongs = $('ol#songs');
 
+// render songs
+    let $olSongs = $('ol#songs');
     let query = new AV.Query('Song');
     query.find().then(function (results) {
         $('#songs-loading').remove();
@@ -320,13 +378,16 @@
               </svg>
             </a>
           </li>
-              `
+              `;
             $olSongs.append(li);
         }
 
 
     }, function (error) {
     });
+
+
+
 
 
 

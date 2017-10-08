@@ -120,13 +120,61 @@ body {
 
 }
 
+
 .playLists > ol.songs > li {
     margin: 8px 0;
     width: 32.8%;
 }
 
 .playLists > ol.songs > li img {
-    width: 105px;
+    width: 122px;
+    position: relative;
+}
+
+
+
+.cover{
+    width:100%;
+    position: relative;
+}
+
+
+.cover >.amount{
+    width: 100%;
+
+}
+.cover >.amount::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 1;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.2),transparent);
+    padding:0;
+}
+.cover >.amount{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    padding-left: 13px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.cover >.amount>svg{
+    margin-top: 1px;
+    z-index: 3;
+}
+section.playLists > ol.songs  .cover >.amount >p{
+    z-index: 3;
+    padding-right: 2px;
+    font-size:12px;
 
 }
 
