@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="./vendors/loaders.min.css">
 </head>
 <body>
 <div class="page">
@@ -130,168 +131,24 @@
       </section>
       <section class="songs">
         <h2 class="sectionTitle">最新音乐</h2>
-        <ol class="list">
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <h3>Pray
-              <small></small>
-            </h3>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              Sam Smith - Pray
-            </p>
-            <a href="" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-
+        <ol class="list" id="songs">
+          <!--<li>-->
+            <!--<h3>Pray-->
+              <!--<small></small>-->
+            <!--</h3>-->
+            <!--<p>-->
+              <!--<svg class="icon icon-sq" aria-hidden="true">-->
+                <!--<use xlink:href="#icon-sq"></use>-->
+              <!--</svg>-->
+              <!--Sam Smith - <span>Pray</span>-->
+            <!--</p>-->
+            <!--<a href="" class="playButton">-->
+              <!--<svg class="icon icon-play" aria-hidden="true">-->
+                <!--<use xlink:href="#icon-play"></use>-->
+              <!--</svg>-->
+            <!--</a>-->
+          <!--</li>-->
+          <div  id="songs-loading" class="square-spin" style="margin: 0 auto; width: 50px ;"><div style="border-color: #D43E33;"></div></div>
         </ol>
       </section>
       <section class="Art">
@@ -365,7 +222,8 @@
 </div>
 <script src="//at.alicdn.com/t/font_434278_0aomglrsa2xrbe29.js"></script>
 <script src="./vendors/jquery.min.js"></script>
-<script src=""></script>
+<script src="./vendors/av-min.js"></script>
+
 
 <script>
     $('.tabs').on('click', 'li', function (e) {
@@ -375,6 +233,105 @@
         $('.tab-content').children().eq(index)
             .addClass('active').siblings().removeClass('active');
     })
+</script>
+<script>
+    var APP_ID = 'menzAmWnFE4jbkQbIwOCgKAy-gzGzoHsz';
+    var APP_KEY = 'NSfkroU6P0hsgfoTR6Kdgmvc';
+
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+
+//    let songObject = AV.Object.extend('Song');
+//    let song1 = new songObject();
+//    song1.set('name','七里香');
+//    song1.set('singer','周杰伦');
+//    song1.set('Album','七里香');
+//    song1.set('url','http://oxhnvl06y.bkt.clouddn.com/%E4%B8%83%E9%87%8C%E9%A6%99-%E5%91%A8%E6%9D%B0%E4%BC%A6.mp3');
+//    let song2 = new songObject();
+//    song2.set('name','一生所爱');
+//    song2.set('singer','卢冠廷');
+//    song2.set('Album','Beyond Imagination');
+//    song2.set('url','http://oxhnvl06y.bkt.clouddn.com/%E4%B8%80%E7%94%9F%E6%89%80%E7%88%B1-%E5%8D%A2%E5%86%A0%E5%BB%B7.mp3');
+//    let song3 = new songObject();
+//    song3.set('name','Pray');
+//    song3.set('singer','Sam Smith');
+//    song3.set('Album','Pray');
+//    song3.set('url','http://oxhnvl06y.bkt.clouddn.com/pray-Sam%20Smith.mp3');
+//    let song4 = new songObject();
+//    song4.set('name','Something Just Like This');
+//    song4.set('singer','The Chainsmokers');
+//    song4.set('Album','Something Just Like This');
+//    song4.set('url','http://oxhnvl06y.bkt.clouddn.com/Something%20Just%20Like%20This%20-The%20Chainsmokers.mp3');
+//     let song5 = new songObject();
+//    song5.set('name','后来(国)(live)');
+//    song5.set('singer','张敬轩');
+//    song5.set('Album','张敬轩Unplugged第一乐章音乐会');
+//    song5.set('url','http://oxhnvl06y.bkt.clouddn.com/%E5%90%8E%E6%9D%A5%28%E5%9B%BD%29%28live%29-%E5%BC%A0%E6%95%AC%E8%BD%A9.mp3');
+//    let song6 = new songObject();
+//    song6.set('name','成都');
+//    song6.set('singer','赵雷');
+//    song6.set('Album','成都');
+//    song6.set('url','http://oxhnvl06y.bkt.clouddn.com/%E6%88%90%E9%83%BD-%E8%B5%B5%E9%9B%B7.mp3');
+//    let song7 = new songObject();
+//    song7.set('name','她说');
+//    song7.set('singer','林俊杰');
+//    song7.set('Album','她说 概念自选辑');
+//    song7.set('url','http://oxhnvl06y.bkt.clouddn.com/%E5%A5%B9%E8%AF%B4-%E6%9E%97%E4%BF%8A%E6%9D%B0.mp3');
+//    let song8 = new songObject();
+//    song8.set('name','追光者');
+//    song8.set('singer','岑宁儿');
+//    song8.set('Album','夏至未至 影视原声带');
+//    song8.set('url','http://oxhnvl06y.bkt.clouddn.com/%E8%BF%BD%E5%85%89%E8%80%85-%E5%B2%91%E5%AE%81%E5%84%BF.mp3');
+//    let song9 = new songObject();
+//    song9.set('name','岁月神偷');
+//    song9.set('singer','金岐玟');
+//    song9.set('Album','金玟岐作品集');
+//    song9.set('url','http://oxhnvl06y.bkt.clouddn.com/%E5%B2%81%E6%9C%88%E7%A5%9E%E5%81%B7-%E9%87%91%E5%B2%90%E7%8E%9F.mp3');
+//    let song10 = new songObject();
+//    song10.set('name','非酋');
+//    song10.set('singer','薛明媛,朱贺');
+//    song10.set('Album','非酋');
+//    song10.set('url','http://oxhnvl06y.bkt.clouddn.com/%20%E9%9D%9E%E9%85%8B-%E8%96%9B%E6%98%8E%E5%AA%9B,%E6%9C%B1%E8%B4%BA%20.mp3');
+//    let songs =[song1,song2,song3,song4,song5,song6,song7,song8,song9,song10];
+//    AV.Object.saveAll(songs);
+    let $olSongs = $('ol#songs');
+
+    let query = new AV.Query('Song');
+    query.find().then(function (results) {
+        $('#songs-loading').remove();
+        for(let i = 0 ; i<results.length; i++){
+              let eachSong =(results[i].attributes);
+              let li = `
+              <li>
+            <h3>${eachSong.name}
+              <small></small>
+            </h3>
+            <p>
+              <svg class="icon icon-sq" aria-hidden="true">
+                <use xlink:href="#icon-sq"></use>
+              </svg>
+              ${eachSong.singer} - <span>${eachSong.Album}</span>
+            </p>
+            <a href="" class="playButton">
+              <svg class="icon icon-play" aria-hidden="true">
+                <use xlink:href="#icon-play"></use>
+              </svg>
+            </a>
+          </li>
+              `
+            $olSongs.append(li);
+        }
+
+
+    }, function (error) {
+    });
+
+
+
+
+
 </script>
 </body>
 </html>
