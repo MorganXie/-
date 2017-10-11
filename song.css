@@ -24,7 +24,7 @@ section.disk {
 section.disk > .circle {
     width: 296px;
     height: 296px;
-    border: 1px solid red;
+    
     margin: 0 auto;
     position: relative;
 }
