@@ -36,7 +36,8 @@
             <path d="m221.98 10.02v-3.996h-5v3.995h5"></path>
             <path
               d="m237.61 9.03h-38.613c.107 1.816.623 2.979 2.376 2.979h38.614c-.107-1.817-.623-2.979-2.377-2.979"></path>
-            <path d="m238.62 20.05h-40.771c.106 1.835.619 3.01 2.363 3.01h40.771c-.107-1.836-.619-3.01-2.363-3.01"></path>
+            <path
+              d="m238.62 20.05h-40.771c.106 1.835.619 3.01 2.363 3.01h40.771c-.107-1.836-.619-3.01-2.363-3.01"></path>
             <path
               d="m192.76 39.03c-.751-2.811-2.252-8.094-2.252-8.094h-5.314c0 0 1.721 6.03 2.406 8.371.337 1.148.185 1.649.104 2.265-.21 1.587-.896 1.433-2.51 1.433h-23.03c-2.757 0-3.196-2.519-2.805-3.695 1.51-4.541 5.313-16.293 5.313-16.293h-5.313c0 0-3.673 11.45-5.153 16.01-.364 1.123-.271 2.446-.16 2.994.595 2.951 2.752 3.998 5.757 3.998h27.749c3 0 4.677-1.048 5.271-3.999.108-.549.332-1.493-.068-2.994"></path>
             <path
@@ -69,43 +70,44 @@
     </section>
     <section class="globalTabs">
       <ol class="tabs">
-        <li class="active">
-          <div class="text ">推荐音乐</div>
+        <li class="">
+          <div class="text">推荐音乐</div>
         </li>
         <li>
           <div class="text">热歌榜</div>
         </li>
-        <li>
-          <div class="text">搜索</div>
+        <li class="active">
+          <div class="text ">搜索</div>
         </li>
       </ol>
     </section>
   </div>
   <ol class="tab-content noCollapse">
-    <li class="page-1  active">
+    <li class="page-1  ">
       <section class="playLists ">
         <h2 class="sectionTitle">推荐歌单</h2>
         <ol class="songs" id="coverList">
-
+          <div id="cover-loading" class="square-spin" style="margin: 0 auto; width: 50px ;">
+            <div style="border-color: #D43E33;"></div>
+          </div>
           <!--<li>-->
-            <!--<div class="cover">-->
-              <!--<div class="amount">-->
-                <!--<svg class="icon" aria-hidden="true">-->
-                  <!--<use xlink:href="#icon-Earphone"></use>-->
-                <!--</svg>-->
-                <!--<p>165.1万</p>-->
-              <!--</div>-->
-              <!--<img src="http://ww1.sinaimg.cn/large/d6c04639gy1fkb9t2h424j206u06uaa1.jpg" alt="封面"/>-->
-            <!--</div>-->
-            <!--<p>我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</p>-->
+          <!--<div class="cover">-->
+          <!--<div class="amount">-->
+          <!--<svg class="icon" aria-hidden="true">-->
+          <!--<use xlink:href="#icon-Earphone"></use>-->
+          <!--</svg>-->
+          <!--<p>165.1万</p>-->
+          <!--</div>-->
+          <!--<img src="http://ww1.sinaimg.cn/large/d6c04639gy1fkb9t2h424j206u06uaa1.jpg" alt="封面"/>-->
+          <!--</div>-->
+          <!--<p>我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</p>-->
           <!--</li>-->
           <!--<li>-->
-            <!--<div class="cover">-->
-              <!--<img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>-->
-            <!--</div>-->
-            <!--<p>我是文字我是文字我是文字我是文字</p>-->
+          <!--<div class="cover">-->
+          <!--<img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>-->
+          <!--</div>-->
+          <!--<p>我是文字我是文字我是文字我是文字</p>-->
           <!--</li>-->
-
 
 
         </ol>
@@ -115,22 +117,24 @@
         <ol class="list" id="songs">
 
           <!--<li>-->
-            <!--<h3>Pray-->
-              <!--<small></small>-->
-            <!--</h3>-->
-            <!--<p>-->
-              <!--<svg class="icon icon-sq" aria-hidden="true">-->
-                <!--<use xlink:href="#icon-sq"></use>-->
-              <!--</svg>-->
-              <!--Sam Smith - <span>Pray</span>-->
-            <!--</p>-->
-            <!--<a href="" class="playButton">-->
-              <!--<svg class="icon icon-play" aria-hidden="true">-->
-                <!--<use xlink:href="#icon-play"></use>-->
-              <!--</svg>-->
-            <!--</a>-->
+          <!--<h3>Pray-->
+          <!--<small></small>-->
+          <!--</h3>-->
+          <!--<p>-->
+          <!--<svg class="icon icon-sq" aria-hidden="true">-->
+          <!--<use xlink:href="#icon-sq"></use>-->
+          <!--</svg>-->
+          <!--Sam Smith - <span>Pray</span>-->
+          <!--</p>-->
+          <!--<a href="" class="playButton">-->
+          <!--<svg class="icon icon-play" aria-hidden="true">-->
+          <!--<use xlink:href="#icon-play"></use>-->
+          <!--</svg>-->
+          <!--</a>-->
           <!--</li>-->
-          <!--<div  id="songs-loading" class="square-spin" style="margin: 0 auto; width: 50px ;"><div style="border-color: #D43E33;"></div></div>-->
+          <div id="songs-loading" class="square-spin" style="margin: 0 auto; width: 50px ;">
+            <div style="border-color: #D43E33;"></div>
+          </div>
         </ol>
       </section>
       <section class="Art">
@@ -198,14 +202,46 @@
       </section>
     </li>
     <li class="page-2">page-2</li>
-    <li class="page-3">
-      <input type="text" id="search" style="background: #888888">
-      <ol id="searchResult"></ol>
+    <li class="page-3 active">
+      <div class="inputWrapper">
+        <svg class="icon " aria-hidden="true">
+          <use xlink:href="#icon-sousuo"></use>
+        </svg>
+        <input type="text" id="search" placeholder="">
+        <label class="holder">搜索歌曲、歌手、专辑</label>
+      </div>
+
+
+      <div class="hotSongsWrapper">
+        <p>热门搜索</p>
+        <ol class="hotSongList">
+          <li class="hotSong"><a href="">七里香</a></li>
+          <li class="hotSong"><a href="">一生所爱</a></li>
+          <li class="hotSong"><a href="">Pray</a></li>
+          <li class="hotSong"><a href="">后来(国)(live)</a></li>
+          <li class="hotSong"><a href="">Something Just Like This</a></li>
+
+          <li class="hotSong"><a href="">成都</a></li>
+          <li class="hotSong"><a href="">追光者</a></li>
+          <li class="hotSong"><a href="">岁月神偷</a></li>
+          <li class="hotSong"><a href="">非酋</a></li>
+          <li class="hotSong"><a href="">她说</a></li>
+        </ol>
+        <ol id="searchResult" class="searchResult">
+          <!--<li data-id = "${results[i].id}">-->
+          <!--<svg class="icon " aria-hidden="true">-->
+          <!--<use xlink:href="#icon-sousuo"></use>-->
+          <!--</svg>-->
+          <!--<a href="./song.html?id=${results[i].id}">非酋</a>-->
+          <!--</li>-->
+        </ol>
+      </div>
+
     </li>
   </ol>
 
 </div>
-<script src="//at.alicdn.com/t/font_434278_nyvekbuq65pzaor.js"></script>
+<script src="//at.alicdn.com/t/font_434278_aa48s7of1nbqpvi.js"></script>
 <script src="./vendors/jquery.min.js"></script>
 <script src="./vendors/av-min.js"></script>
 
@@ -229,53 +265,15 @@
     });
 
 
-
-//    let songList = AV.Object.extend('PlayList');
-//
-//    let cover1 = new songList();
-//    cover1.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover1.jpeg');
-//    cover1.set('text','『流光美人』香港电影十二钗');
-//    cover1.set('playAmount','165.1万');
-//
-//    let cover2 = new songList();
-//    cover2.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover2.jpeg');
-//    cover2.set('text','令人智熄·让人智力骤减的BGM');
-//    cover2.set('playAmount','65.1万');
-//
-//    let cover3 = new songList();
-//    cover3.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover3.jpeg');
-//    cover3.set('text','「华语」哭泣使人乞讨，思念使人奔跑');
-//    cover3.set('playAmount','547.7万');
-//
-//    let cover4 = new songList();
-//    cover4.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover4.jpeg');
-//    cover4.set('text','华语 | 我可以忘记一切，却忘不了你的出现');
-//    cover4.set('playAmount','1111.7万');
-//
-//    let cover5 = new songList();
-//    cover5.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover5.jpeg');
-//    cover5.set('text','想撩妹？用这单就够了');
-//    cover5.set('playAmount','1071.7万');
-//
-//    let cover6 = new songList();
-//    cover6.set('imgUrl','http://oxhnvl06y.bkt.clouddn.com/cover6.jpeg');
-//    cover6.set('text','纯音乐｜安静的午后，和钢琴跳支舞吧');
-//    cover6.set('playAmount','69.5万');
-//
-//    let coverList = [cover1,cover2,cover3,cover4,cover5,cover6];
-//    AV.Object.saveAll(coverList);
-
-
-
-
-
-//render playList
+    //render playList
 
     let $coverList = $('ol#coverList');
 
-    let query1 = new AV.Query('PlayList');
-    query1.find().then(function (results) {
-        for(let i = 0 ;i <results.length;i++){
+    let queryPlayList = new AV.Query('PlayList');
+    queryPlayList.find().then(function (results) {
+        $('#cover-loading').remove();
+
+        for (let i = 0; i < results.length; i++) {
             let eachCover = (results[i].attributes);
 
             let li = `
@@ -299,69 +297,15 @@
     });
 
 
-
-//    let songObject = AV.Object.extend('Song');
-//    let song1 = new songObject();
-//    song1.set('name','七里香');
-//    song1.set('singer','周杰伦');
-//    song1.set('Album','七里香');
-//    song1.set('url','http://oxhnvl06y.bkt.clouddn.com/%E4%B8%83%E9%87%8C%E9%A6%99-%E5%91%A8%E6%9D%B0%E4%BC%A6.mp3');
-//    let song2 = new songObject();
-//    song2.set('name','一生所爱');
-//    song2.set('singer','卢冠廷');
-//    song2.set('Album','Beyond Imagination');
-//    song2.set('url','http://oxhnvl06y.bkt.clouddn.com/%E4%B8%80%E7%94%9F%E6%89%80%E7%88%B1-%E5%8D%A2%E5%86%A0%E5%BB%B7.mp3');
-//    let song3 = new songObject();
-//    song3.set('name','Pray');
-//    song3.set('singer','Sam Smith');
-//    song3.set('Album','Pray');
-//    song3.set('url','http://oxhnvl06y.bkt.clouddn.com/pray-Sam%20Smith.mp3');
-//    let song4 = new songObject();
-//    song4.set('name','Something Just Like This');
-//    song4.set('singer','The Chainsmokers');
-//    song4.set('Album','Something Just Like This');
-//    song4.set('url','http://oxhnvl06y.bkt.clouddn.com/Something%20Just%20Like%20This%20-The%20Chainsmokers.mp3');
-//     let song5 = new songObject();
-//    song5.set('name','后来(国)(live)');
-//    song5.set('singer','张敬轩');
-//    song5.set('Album','张敬轩Unplugged第一乐章音乐会');
-//    song5.set('url','http://oxhnvl06y.bkt.clouddn.com/%E5%90%8E%E6%9D%A5%28%E5%9B%BD%29%28live%29-%E5%BC%A0%E6%95%AC%E8%BD%A9.mp3');
-//    let song6 = new songObject();
-//    song6.set('name','成都');
-//    song6.set('singer','赵雷');
-//    song6.set('Album','成都');
-//    song6.set('url','http://oxhnvl06y.bkt.clouddn.com/%E6%88%90%E9%83%BD-%E8%B5%B5%E9%9B%B7.mp3');
-//    let song7 = new songObject();
-//    song7.set('name','她说');
-//    song7.set('singer','林俊杰');
-//    song7.set('Album','她说 概念自选辑');
-//    song7.set('url','http://oxhnvl06y.bkt.clouddn.com/%E5%A5%B9%E8%AF%B4-%E6%9E%97%E4%BF%8A%E6%9D%B0.mp3');
-//    let song8 = new songObject();
-//    song8.set('name','追光者');
-//    song8.set('singer','岑宁儿');
-//    song8.set('Album','夏至未至 影视原声带');
-//    song8.set('url','http://oxhnvl06y.bkt.clouddn.com/%E8%BF%BD%E5%85%89%E8%80%85-%E5%B2%91%E5%AE%81%E5%84%BF.mp3');
-//    let song9 = new songObject();
-//    song9.set('name','岁月神偷');
-//    song9.set('singer','金岐玟');
-//    song9.set('Album','金玟岐作品集');
-//    song9.set('url','http://oxhnvl06y.bkt.clouddn.com/%E5%B2%81%E6%9C%88%E7%A5%9E%E5%81%B7-%E9%87%91%E5%B2%90%E7%8E%9F.mp3');
-//    let song10 = new songObject();
-//    song10.set('name','非酋');
-//    song10.set('singer','薛明媛,朱贺');
-//    song10.set('Album','非酋');
-//    song10.set('url','http://oxhnvl06y.bkt.clouddn.com/%20%E9%9D%9E%E9%85%8B-%E8%96%9B%E6%98%8E%E5%AA%9B,%E6%9C%B1%E8%B4%BA%20.mp3');
-//    let songs =[song1,song2,song3,song4,song5,song6,song7,song8,song9,song10];
-//    AV.Object.saveAll(songs);
-
-// render songs
+    // render songs
     let $olSongs = $('ol#songs');
-    let query = new AV.Query('Song');
-    query.find().then(function (results) {
+    let queryEachsong = new AV.Query('Song');
+    queryEachsong.find().then(function (results) {
         $('#songs-loading').remove();
-        for(let i = 0 ; i<results.length; i++){
-              let eachSong =(results[i].attributes);
-              let li = `
+
+        for (let i = 0; i < results.length; i++) {
+            let eachSong = (results[i].attributes);
+            let li = `
               <li>
             <h3>${eachSong.name}
               <small></small>
@@ -381,18 +325,67 @@
               `;
             $olSongs.append(li);
         }
-
-
     }, function (error) {
+        alert('获取歌曲失败')
     });
 
 
+    //search
+    let timer = null;
+
+    $('input#search').on('input', function (e) {
+        $('#searchResult').empty();
+        $('.holder').html('');
+        if (timer) {
+            window.clearTimeout(timer);
+        }
+        timer = setTimeout(function () {
+            let $input = $(e.currentTarget);
+            let value = $input.val().trim();
+
+            if (value === '') {
+                $('.holder').html('搜索歌曲、歌手、专辑');
+                $('.hotSongList').css('display','flex');
+                return
+            }
+            let querySongs = new AV.Query('Song');
+            querySongs.contains('name', value);
+            let querySinger = new AV.Query('Song');
+            querySinger.contains('singer', value);
+            let queryAlbum = new AV.Query('Song');
+            queryAlbum.contains('Album', value);
+
+            let queryAll = AV.Query.or(querySongs, queryAlbum, querySinger);
+
+            queryAll.find().then(function (results) {
+                $('.hotSongList').css('display','none');
+                if (results.length === 0) {
+                    $('#searchResult').html('<li> <svg class="icon " aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg><a>没有找到结果</a></li> ');
+                }
+                else {
+                    for (let i = 0; i < results.length; i++) {
+                        let songs = results[i].attributes;
+                        let li =
+                            `
+
+                         <li data-id = "${results[i].id}">
+                            <svg class="icon " aria-hidden="true">
+                          <use xlink:href="#icon-sousuo"></use>
+                         </svg>
+                            <a href="./song.html?id=${results[i].id}">${songs.name} - ${songs.singer}</a>
+                          </li>
 
 
+                        `;
+                        $('#searchResult').append(li);
+                    }
+                }
+            });
+            timer = null;
+        }, 300);
 
 
-
-
+    })
 </script>
 </body>
 </html>

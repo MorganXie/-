@@ -4,7 +4,7 @@ body {
 
 .page > .sticky {
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     left: 0;
     top: 0;
@@ -127,7 +127,7 @@ body {
 }
 
 .playLists > ol.songs > li img {
-    width: 122px;
+    width: 100%;
     position: relative;
 }
 
@@ -151,7 +151,7 @@ body {
     width: 100%;
     height: 20px;
     z-index: 1;
-    background-image: linear-gradient(180deg,rgba(0,0,0,.2),transparent);
+    background-image: linear-gradient(180deg,rgba(0,0,0,.4),transparent);
     padding:0;
 }
 .cover >.amount{
@@ -275,5 +275,133 @@ section.Art > .copyRight {
     transform: scale(.75);
     margin-top: 3px;
     padding-bottom: 18px;
+
+}
+
+
+/*page-3  */
+
+.page-3 >.inputWrapper{
+    position: relative;
+    width: 94.6%;
+    height: 30px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background: #ebecec;
+    border-radius: 30px;
+    text-align: center;
+    margin: 15px auto;
+
+
+}
+.page-3 input{
+    width: 100%;
+    height: 30px;
+    line-height: 18px;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+    border:0;
+    outline: none;
+
+}
+
+.page-3 >.inputWrapper > label.holder{
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    font-size: 14px;
+    color: #c9c9c9;
+    background: transparent;
+    pointer-events: none;
+}
+.page-3 >.inputWrapper >svg{
+    position: absolute;
+    left: 0;
+    top: 9px;
+    margin: 0 8px;
+    vertical-align: middle;
+    fill: #C9C9CA
+}
+
+.hotSongsWrapper{
+    padding: 15px 10px 0 10px;
+    border-top: 1px solid #e4e5e6;
+}
+.hotSongsWrapper > p{
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+}
+
+.hotSongsWrapper >ol{
+    margin-top:10px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 355px;
+    height: 120px;
+}
+
+.hotSongsWrapper >ol>li.hotSong{
+
+    display: inline-block;
+    height: 32px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 0 14px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #333;
+    position: relative;
+}
+
+
+.hotSongsWrapper  > ol> li.hotSong::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 32px;
+    width: 200%;
+    height: 200%;
+    border:1px solid #d3d4da;
+    transform: scale(.5);
+    transform-origin: 0 0;
+}
+
+.searchResult{
+    display: flex;
+}
+
+.searchResult> li{
+    display: inline-block;
+    flex-grow: 1;
+    width: 100%;
+    padding-right: 10px;
+    font-size: 15px;
+    line-height: 45px;
+    height: 45px;
+    color: #333;
+    position: relative;
+
+}
+.searchResult> li ::after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    bottom:0;
+    left: 0;
+    border-bottom: 1px solid #F1F1F2;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+
+
+}
+.searchResult  svg{
+    width: 15px;
+    height: 15px;
+    fill: #B6B5B6;
+    margin-right: 7px;
 
 }
