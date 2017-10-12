@@ -1,16 +1,47 @@
 let $lyricWrapper = $('.lyric-wrapper');
+let $showArea = $('.showArea');
 let id = window.location.search.match(/\bid=([^&]*)/)[1];
 let query = new AV.Query('Song');
+let $bgImg = $('.bgImg');
+let audio = document.createElement('audio');
 query.get(id).then(function (song) {
     let {url, cover, name, singer, lyric} = song.attributes;
-    initPage(lyric, cover, name, singer);
+    let array = initPage(lyric, cover, name, singer);
     initPlayer(url, cover, name, singer);
+    setInterval(function () {
+        let $lines = $('.lyric-wrapper p');
+        let $whichLine ;
+        let time = audio.currentTime;
+        for (let i = 0; i < array.length; i++) {
+            let currentLineTime =$lines.eq(i).attr('data-time');
+            let nextLineTime = $lines.eq(i+1).attr('data-time');
+            if (i === array.length - 1) {
+                break;
+            }
+            if (currentLineTime<time && nextLineTime > time) {
+                $whichLine = $lines.eq(i);
+                break;
+            }
+        }
+        if($whichLine){
+
+            let top  = $whichLine.offset().top;
+
+            let lineTop = $('.lyric-wrapper').offset().top;
+            let deltaLength  = top - lineTop - $('.showArea').height()/3;
+
+            $('.lyric-wrapper').css('transform',`translateY(-${deltaLength}px)`);
+            $whichLine.addClass('active').siblings().removeClass('active');
+        }
+    }, 500);
+
 });
 
 
 function initPlayer(url) {
-    let audio = document.createElement('audio');
+
     audio.src = url;
+
     //播放暂停
     $('.icon-pause').on('click', function () {
         $('.circle').addClass('pause').removeClass('playing');
@@ -21,20 +52,27 @@ function initPlayer(url) {
         $('.circle').addClass('playing').removeClass('pause');
         audio.play();
     });
+
 }
 
 
 function initPage(lyric, cover, name, singer) {
     $('.circle>img').attr('src', cover);
-    $(`<h1>${name} - ${singer}</h1>`).insertBefore($lyricWrapper);
-    // $('.page::before').css('background',cover);
-
+    $(`<h1>${name} - ${singer}</h1>`).insertBefore($showArea);
+    $bgImg.css(
+        {'background': 'url('+cover+')'+'center'+' '+'no-repeat',
+        'background-size':'cover'});
     let Lyric = parseLyric(lyric);
+
     Lyric.map(function (obj) {
         let $p = $('<p/>');
         $p.attr('data-time', obj.time).text(obj.lyric);
         $p.appendTo($lyricWrapper);
     });
+
+    return Lyric;
+
+
 }
 
 
@@ -64,21 +102,16 @@ function parseLyric(lyric) {
             obj.time = minute * 60 + seconds;
         }
     });
+
     return array;
 }
 
 
-//     setInterval(function () {
-//         for (let i = 0; i < array.length; i++) {
-//             if (i === array.length - 1) {
-//                 break;
-//             }
-//             if (array[i].time <= audio.currentTime && array[i + 1].time > audio.currentTime) {
-//                 console.log(array[i].lyric);
-//                 break;
-//             }
-//         }
-//     }, 1000)
+
+
+
+
+
 // //获取id
 // function getParameterByName(name, url) {
 //     if (!url) url = window.location.href;

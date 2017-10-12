@@ -83,7 +83,7 @@
     </section>
   </div>
   <ol class="tab-content noCollapse">
-    <li class="page-1  ">
+    <li class="page-1 active ">
       <section class="playLists ">
         <h2 class="sectionTitle">推荐歌单</h2>
         <ol class="songs" id="coverList">
@@ -202,7 +202,7 @@
       </section>
     </li>
     <li class="page-2">page-2</li>
-    <li class="page-3 active">
+    <li class="page-3 ">
       <div class="inputWrapper">
         <svg class="icon " aria-hidden="true">
           <use xlink:href="#icon-sousuo"></use>
@@ -215,17 +215,17 @@
       <div class="hotSongsWrapper">
         <p>热门搜索</p>
         <ol class="hotSongList">
-          <li class="hotSong"><a href="">七里香</a></li>
-          <li class="hotSong"><a href="">一生所爱</a></li>
-          <li class="hotSong"><a href="">Pray</a></li>
-          <li class="hotSong"><a href="">后来(国)(live)</a></li>
-          <li class="hotSong"><a href="">Something Just Like This</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5bf">七里香</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c0">一生所爱</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c1">Pray</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c2" >后来(国)(live)</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c2">Something Just Like This</a></li>
 
-          <li class="hotSong"><a href="">成都</a></li>
-          <li class="hotSong"><a href="">追光者</a></li>
-          <li class="hotSong"><a href="">岁月神偷</a></li>
-          <li class="hotSong"><a href="">非酋</a></li>
-          <li class="hotSong"><a href="">她说</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c3">成都</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c6">追光者</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c7">岁月神偷</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c8">非酋</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c9">她说</a></li>
         </ol>
         <ol id="searchResult" class="searchResult">
           <!--<li data-id = "${results[i].id}">-->
@@ -298,16 +298,17 @@
             let eachSong = (results[i].attributes);
             let li = `
               <li>
-            <h3>${eachSong.name}
+            <a href="./song.html?id=${results[i].id}"<h3>${eachSong.name}
               <small></small>
             </h3>
+            </a>
             <p>
               <svg class="icon icon-sq" aria-hidden="true">
                 <use xlink:href="#icon-sq"></use>
               </svg>
               ${eachSong.singer} - <span>${eachSong.Album}</span>
             </p>
-            <a href="" class="playButton">
+            <a href="./song.html?id=${results[i].id}" class="playButton">
               <svg class="icon icon-play" aria-hidden="true">
                 <use xlink:href="#icon-play"></use>
               </svg>
@@ -323,6 +324,8 @@
 
     //search
     let timer = null;
+
+
 
     $('input#search').on('input', function (e) {
         $('#searchResult').empty();
@@ -349,7 +352,7 @@
             let queryAll = AV.Query.or(querySongs, queryAlbum, querySinger);
 
             queryAll.find().then(function (results) {
-                $('.hotSongList').css('display', 'none');
+
                 if (results.length === 0) {
                     $('#searchResult').html('<li> <svg class="icon " aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg><a>没有找到结果</a></li> ');
                 }
@@ -365,12 +368,14 @@
                             <a href="./song.html?id=${results[i].id}">${songs.name} - ${songs.singer}</a>
                           </li>
                         `;
+
                         $('#searchResult').append(li);
+                        $('.hotSongList').css('display', 'none');
                     }
                 }
             });
             timer = null;
-        }, 100);
+        }, 200);
     })
 </script>
 </body>

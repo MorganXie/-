@@ -368,6 +368,7 @@ section.Art > .copyRight {
     border:1px solid #d3d4da;
     transform: scale(.5);
     transform-origin: 0 0;
+    z-index: -1;
 }
 
 .searchResult{
