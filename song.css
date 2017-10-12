@@ -1,6 +1,10 @@
 .page {
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .page::before {
@@ -18,13 +22,27 @@
 
 section.disk {
     padding-top: 70px;
+    position: relative;
 
+
+}
+
+section.disk::after {
+    position: absolute;
+    content: '';
+    width: 96px;
+    height: 137px;
+    top: 0;
+    left: 160px;
+    background: transparent url("http://ww1.sinaimg.cn/large/d6c04639gy1fkdhmdmoroj20800bfjrb.jpg") no-repeat center;
+    background-size: contain;
+    z-index: 3;
 }
 
 section.disk > .circle {
     width: 296px;
     height: 296px;
-    
+
     margin: 0 auto;
     position: relative;
 }
@@ -51,7 +69,6 @@ section.disk > .circle::after {
     background: transparent url("http://ww1.sinaimg.cn/large/d6c04639gy1fkdhmdlo6zj20ds0dst8k.jpg") no-repeat center;
     background-size: cover;
 
-
 }
 
 .circle > img {
@@ -65,25 +82,120 @@ section.disk > .circle::after {
     border-radius: 50%;
 
 }
-.playing::after{
-    animation: spin 15s linear infinite;
-}
-.playing >img{
-    animation: spin 15s linear infinite;
+
+.circle svg{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -28px;
+    margin-top: -28px;
+    width: 56px;
+    height: 56px;
+    fill: white;
+    z-index: 10;
 }
 
-.playing.pause>img,  .pause::after {
+.circle::after {
+    animation: spin 20s linear infinite;
+}
+
+.circle > img {
+    animation: spin 20s linear infinite;
+}
+
+.circle.pause >img, .circle.pause::after {
     animation-play-state: paused;
 }
 
+
+
 @keyframes spin {
     0% {
-        transform:  rotateZ(0deg);
+        transform: rotateZ(0deg);
     }
     100% {
-        transform:  rotateZ(360deg);
+        transform: rotateZ(360deg);
     }
+}
 
+
+.playing >svg.icon-play{
+    display: none;
+}
+.pause > svg.icon-pause{
+    display: none;
+}
+.playing >svg.icon-pause{
+    display: block;
+}
+.pause> svg.icon-play{
+    display: block;
+}
+
+
+.lyric{
+    color: #AEABAC;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.lyric >h1{
+    color: #FFFFFF;
+    font-size:18px;
+    margin-top: 30px;
+    line-height: 2;
+}
+
+.lyric-wrapper{
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lyric >.lyric-wrapper > p{
+    font-size:16px;
+    padding-bottom: 8px;
+    line-height: 32px;
+    width:305px;
+}
+
+.lyric >.lyric-wrapper>p.active{
+    color: #FFFFFF;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.buttonWrapper{
+    display: flex;
+    width: 292px;
+    height: 42px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+.actions >.buttonWrapper>a{
+    color: #D43E33;
+    width:140px ;
+    padding:0 6px;
+    line-height: 40px;
+    border:1px solid #D43B33;
+    font-size:18px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.actions >.buttonWrapper>.loadButton{
+    color: #FFFFFF;
+    background-color: #D43E33;
 }
 
 
