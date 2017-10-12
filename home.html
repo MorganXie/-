@@ -258,13 +258,6 @@
 </script>
 <script>
     //render playList
-
-    window.onload=initPage;
-
-    function initPage(){
-        $('#searchResult').empty();
-        $('.holder').html('搜索歌曲、歌手、专辑');
-    }
     let $coverList = $('ol#coverList');
 
     let queryPlayList = new AV.Query('PlayList');
@@ -371,15 +364,13 @@
                          </svg>
                             <a href="./song.html?id=${results[i].id}">${songs.name} - ${songs.singer}</a>
                           </li>
-
-
                         `;
                         $('#searchResult').append(li);
                     }
                 }
             });
             timer = null;
-        }, 300);
+        }, 100);
     })
 </script>
 </body>

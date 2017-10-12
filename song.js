@@ -11,11 +11,6 @@ query.get(id).then(function (song) {
 function initPlayer(url) {
     let audio = document.createElement('audio');
     audio.src = url;
-    audio.oncanplay = function () {
-        audio.play();
-        $('.circle').addClass('playing');
-    };
-
     //播放暂停
     $('.icon-pause').on('click', function () {
         $('.circle').addClass('pause').removeClass('playing');
@@ -32,6 +27,7 @@ function initPlayer(url) {
 function initPage(lyric, cover, name, singer) {
     $('.circle>img').attr('src', cover);
     $(`<h1>${name} - ${singer}</h1>`).insertBefore($lyricWrapper);
+    // $('.page::before').css('background',cover);
 
     let Lyric = parseLyric(lyric);
     Lyric.map(function (obj) {

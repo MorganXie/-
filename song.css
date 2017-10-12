@@ -118,18 +118,19 @@ section.disk > .circle::after {
     }
 }
 
-
 .playing >svg.icon-play{
     display: none;
 }
-.pause > svg.icon-pause{
-    display: none;
-}
+
 .playing >svg.icon-pause{
     display: block;
 }
 .pause> svg.icon-play{
     display: block;
+}
+
+.pause > svg.icon-pause{
+    display: none;
 }
 
 
@@ -197,6 +198,9 @@ section.disk > .circle::after {
     color: #FFFFFF;
     background-color: #D43E33;
 }
+
+
+
 
 
 
