@@ -4,10 +4,9 @@
     display: flex;
     flex-direction: column;
 
-
 }
 
-.page >.bgImg{
+.page > .bgImg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -22,7 +21,6 @@
 section.disk {
     padding-top: 70px;
     position: relative;
-
 
 }
 
@@ -81,9 +79,9 @@ section.disk > .circle::after {
 
 }
 
-.circle svg{
+.circle svg {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     margin-left: -28px;
     margin-top: -28px;
@@ -101,11 +99,9 @@ section.disk > .circle::after {
     animation: spin 20s linear infinite;
 }
 
-.circle.pause >img, .circle.pause::after {
+.circle.pause > img, .circle.pause::after {
     animation-play-state: paused;
 }
-
-
 
 @keyframes spin {
     0% {
@@ -116,42 +112,42 @@ section.disk > .circle::after {
     }
 }
 
-.playing >svg.icon-play{
+.playing > svg.icon-play {
     display: none;
 }
 
-.playing >svg.icon-pause{
-    display: block;
-}
-.pause> svg.icon-play{
+.playing > svg.icon-pause {
     display: block;
 }
 
-.pause > svg.icon-pause{
+.pause > svg.icon-play {
+    display: block;
+}
+
+.pause > svg.icon-pause {
     display: none;
 }
 
-
-.lyric{
+.lyric {
     color: #AEABAC;
     text-align: center;
     flex-grow: 1;
 
-
 }
-.lyric >.showArea{
+
+.lyric > .showArea {
     height: 120px;
     overflow: hidden;
 }
 
-.lyric >h1{
+.lyric > h1 {
     color: #FFFFFF;
-    font-size:18px;
+    font-size: 18px;
     margin-top: 30px;
     line-height: 2;
 }
 
-.lyric-wrapper{
+.lyric-wrapper {
     height: 120px;
     display: flex;
     justify-content: center;
@@ -159,24 +155,26 @@ section.disk > .circle::after {
     flex-wrap: wrap;
     transition: transform 0.3s;
 }
- .lyric-wrapper   p{
-    font-size:16px;
+
+.lyric-wrapper p {
+    font-size: 16px;
     padding-bottom: 8px;
     line-height: 32px;
-    width:305px;
+    width: 305px;
 }
 
-.lyric-wrapper p.active{
+.lyric-wrapper p.active {
     color: #FFFFFF;
 }
 
-.actions{
+.actions {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
-.buttonWrapper{
+
+.buttonWrapper {
     display: flex;
     width: 292px;
     height: 42px;
@@ -184,22 +182,105 @@ section.disk > .circle::after {
     align-items: center;
     flex-direction: row;
 }
-.actions >.buttonWrapper>a{
+
+.actions > .buttonWrapper > a {
     color: #D43E33;
-    width:140px ;
-    padding:0 6px;
+    width: 140px;
+    padding: 0 6px;
     line-height: 40px;
-    border:1px solid #D43B33;
-    font-size:18px;
+    border: 1px solid #D43B33;
+    font-size: 18px;
     text-align: center;
     border-radius: 4px;
     background-color: transparent;
 }
 
-.actions >.buttonWrapper>.loadButton{
+.actions > .buttonWrapper > .loadButton {
     color: #FFFFFF;
     background-color: #D43E33;
 }
+
+
+.hidden{
+    display: none;
+}
+/*iphone5*/
+@media screen and (max-height: 620px) {
+    section.disk {
+        padding-top: 65px;
+        position: relative;
+    }
+
+    section.disk::after {
+        position: absolute;
+        content: '';
+        width: 84px;
+        height: 122px;
+        top: 0;
+        left: 135px;
+    }
+
+    section.disk > .circle {
+        width: 248px;
+        height: 248px;
+    }
+
+    .circle > img {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -75px;
+        margin-top: -75px;
+    }
+
+    .circle svg {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .lyric > .showArea {
+        margin-top: 14px;
+        height: 87px;
+    }
+
+    .lyric > h1 {
+        font-size: 15px;
+        margin-top: 25px;
+        line-height: 17px;
+    }
+
+    .lyric-wrapper {
+        height: 87px;
+
+    }
+
+    .lyric-wrapper p {
+        font-size: 13px;
+        padding-bottom: 5px;
+        line-height: 24px;
+        width: 250px;
+    }
+
+    .actions > .buttonWrapper {;
+        width: 250px;
+        height: 36px;
+    }
+
+    .actions > .buttonWrapper > a {
+        color: #D43E33;
+        width: 119px;
+        margin: 0 6px;
+        line-height: 34px;
+        border: 1px solid #D43B33;
+        font-size: 15px;
+        border-radius: 4px;
+    }
+}
+
+
 
 
 

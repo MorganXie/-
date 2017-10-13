@@ -70,10 +70,10 @@
     </section>
     <section class="globalTabs">
       <ol class="tabs">
-        <li class="active">
+        <li class=" ">
           <div class="text">推荐音乐</div>
         </li>
-        <li>
+        <li class="active ">
           <div class="text">热歌榜</div>
         </li>
         <li class=" ">
@@ -83,55 +83,18 @@
     </section>
   </div>
   <ol class="tab-content noCollapse">
-    <li class="page-1 active ">
+    <li class="page-1 ">
       <section class="playLists ">
         <h2 class="sectionTitle">推荐歌单</h2>
         <ol class="songs" id="coverList">
           <div id="cover-loading" class="square-spin" style="margin: 0 auto; width: 50px ;">
             <div style="border-color: #D43E33;"></div>
           </div>
-          <!--<li>-->
-          <!--<div class="cover">-->
-          <!--<div class="amount">-->
-          <!--<svg class="icon" aria-hidden="true">-->
-          <!--<use xlink:href="#icon-Earphone"></use>-->
-          <!--</svg>-->
-          <!--<p>165.1万</p>-->
-          <!--</div>-->
-          <!--<img src="http://ww1.sinaimg.cn/large/d6c04639gy1fkb9t2h424j206u06uaa1.jpg" alt="封面"/>-->
-          <!--</div>-->
-          <!--<p>我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</p>-->
-          <!--</li>-->
-          <!--<li>-->
-          <!--<div class="cover">-->
-          <!--<img src="http://ww1.sinaimg.cn/large/d6c04639gy1fk8sajtx7dj20690693yk.jpg" alt="封面"/>-->
-          <!--</div>-->
-          <!--<p>我是文字我是文字我是文字我是文字</p>-->
-          <!--</li>-->
-
-
         </ol>
       </section>
       <section class="songs">
         <h2 class="sectionTitle">最新音乐</h2>
         <ol class="list" id="songs">
-
-          <!--<li>-->
-          <!--<h3>Pray-->
-          <!--<small></small>-->
-          <!--</h3>-->
-          <!--<p>-->
-          <!--<svg class="icon icon-sq" aria-hidden="true">-->
-          <!--<use xlink:href="#icon-sq"></use>-->
-          <!--</svg>-->
-          <!--Sam Smith - <span>Pray</span>-->
-          <!--</p>-->
-          <!--<a href="" class="playButton">-->
-          <!--<svg class="icon icon-play" aria-hidden="true">-->
-          <!--<use xlink:href="#icon-play"></use>-->
-          <!--</svg>-->
-          <!--</a>-->
-          <!--</li>-->
           <div id="songs-loading" class="square-spin" style="margin: 0 auto; width: 50px ;">
             <div style="border-color: #D43E33;"></div>
           </div>
@@ -201,7 +164,26 @@
         </div>
       </section>
     </li>
-    <li class="page-2">page-2</li>
+    <li class="page-2 active">
+      <section class="banner">
+        <img src="http://ww1.sinaimg.cn/large/d6c04639gy1fkgwco260gj207v03pgll.jpg" alt="">
+        <p>更新日期：10月12日</p>
+      </section>
+      <ol class="hotSongList" id="hotSongList">
+        <div id="hotSongs-loading" class="square-spin" style="margin: 0 auto; width: 50px ;">
+          <div style="border-color: #D43E33;"></div>
+        </div>
+      </ol>
+      <div class="Bottom-button">
+        <a href="https://m.music.163.com/m/applink/?scheme=orpheus%3A%2F%2Fplaylist%2F3778678&dl=https%3A%2F%2Fitunes.apple.com%2Fapp%2Fid590338362">
+          查看完整榜单
+          <svg class="icon " aria-hidden="true">
+            <use xlink:href="#icon-arrowRight"></use>
+          </svg>
+        </a>
+      </div>
+
+    </li>
     <li class="page-3 ">
       <div class="inputWrapper">
         <svg class="icon " aria-hidden="true">
@@ -215,168 +197,29 @@
       <div class="hotSongsWrapper">
         <p>热门搜索</p>
         <ol class="hotSongList">
-          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5bf">七里香</a></li>
-          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c0">一生所爱</a></li>
-          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c1">Pray</a></li>
-          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c2" >后来(国)(live)</a></li>
           <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c2">Something Just Like This</a></li>
-
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5bf">七里香</a></li>
           <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c4">成都</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c0">一生所爱</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c2" >后来(国)(live)</a></li>
           <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c6">追光者</a></li>
           <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c7">岁月神偷</a></li>
           <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c8">非酋</a></li>
           <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c9">她说</a></li>
+          <li class="hotSong"><a href="./song.html?id=59d9cff2fe88c2003c8db5c1">Pray</a></li>
         </ol>
-        <ol id="searchResult" class="searchResult">
-          <!--<li data-id = "${results[i].id}">-->
-          <!--<svg class="icon " aria-hidden="true">-->
-          <!--<use xlink:href="#icon-sousuo"></use>-->
-          <!--</svg>-->
-          <!--<a href="./song.html?id=${results[i].id}">非酋</a>-->
-          <!--</li>-->
-        </ol>
+        <ol id="searchResult" class="searchResult"></ol>
       </div>
-
     </li>
   </ol>
 
 </div>
-<script src="//at.alicdn.com/t/font_434278_omxfoo54bm89qkt9.js"></script>
+
+<script src="//at.alicdn.com/t/font_434278_3ubd0nhhqa3e4s4i.js"></script>
 <script src="./vendors/jquery.min.js"></script>
 <script src="./vendors/av-min.js"></script>
 <script src="scripts/av.js"></script>
+<script src="scripts/home.js"></script>
 
-
-<script>
-    $('.tabs').on('click', 'li', function (e) {
-        let $li = $(e.currentTarget);
-        let index = $li.index();
-        $li.addClass('active').siblings().removeClass('active');
-        $('.tab-content').children().eq(index)
-            .addClass('active').siblings().removeClass('active');
-    })
-</script>
-<script>
-    //render playList
-    let $coverList = $('ol#coverList');
-
-    let queryPlayList = new AV.Query('PlayList');
-    queryPlayList.find().then(function (results) {
-        $('#cover-loading').remove();
-
-        for (let i = 0; i < results.length; i++) {
-            let eachCover = (results[i].attributes);
-
-            let li = `
-            <li>
-            <div class="cover">
-              <div class="amount">
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-Earphone"></use>
-                </svg>
-                <p>${eachCover.playAmount}</p>
-              </div>
-              <img src="${eachCover.imgUrl}" alt="封面"/>
-            </div>
-            <p>${eachCover.text}</p>
-          </li>
-            `;
-
-            $coverList.append(li);
-        }
-    }, function (error) {
-    });
-
-
-    // render songs
-    let $olSongs = $('ol#songs');
-    let queryEachsong = new AV.Query('Song');
-    queryEachsong.find().then(function (results) {
-        $('#songs-loading').remove();
-
-        for (let i = 0; i < results.length; i++) {
-            let eachSong = (results[i].attributes);
-            let li = `
-              <li>
-            <a href="./song.html?id=${results[i].id}"<h3>${eachSong.name}
-              <small></small>
-            </h3>
-            </a>
-            <p>
-              <svg class="icon icon-sq" aria-hidden="true">
-                <use xlink:href="#icon-sq"></use>
-              </svg>
-              ${eachSong.singer} - <span>${eachSong.Album}</span>
-            </p>
-            <a href="./song.html?id=${results[i].id}" class="playButton">
-              <svg class="icon icon-play" aria-hidden="true">
-                <use xlink:href="#icon-play"></use>
-              </svg>
-            </a>
-          </li>
-              `;
-            $olSongs.append(li);
-        }
-    }, function (error) {
-        alert('获取歌曲失败')
-    });
-
-
-    //search
-    let timer = null;
-
-
-
-    $('input#search').on('input', function (e) {
-        $('#searchResult').empty();
-        $('.holder').html('');
-        if (timer) {
-            window.clearTimeout(timer);
-        }
-        timer = setTimeout(function () {
-            let $input = $(e.currentTarget);
-            let value = $input.val().trim();
-
-            if (value === '') {
-                $('.holder').html('搜索歌曲、歌手、专辑');
-                $('.hotSongList').css('display', 'flex');
-                return
-            }
-            let querySongs = new AV.Query('Song');
-            querySongs.contains('name', value);
-            let querySinger = new AV.Query('Song');
-            querySinger.contains('singer', value);
-            let queryAlbum = new AV.Query('Song');
-            queryAlbum.contains('Album', value);
-
-            let queryAll = AV.Query.or(querySongs, queryAlbum, querySinger);
-
-            queryAll.find().then(function (results) {
-
-                if (results.length === 0) {
-                    $('#searchResult').html('<li> <svg class="icon " aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg><a>没有找到结果</a></li> ');
-                }
-                else {
-                    for (let i = 0; i < results.length; i++) {
-                        let songs = results[i].attributes;
-                        let li =
-                            `
-                         <li data-id = "${results[i].id}">
-                            <svg class="icon " aria-hidden="true">
-                          <use xlink:href="#icon-sousuo"></use>
-                         </svg>
-                            <a href="./song.html?id=${results[i].id}">${songs.name} - ${songs.singer}</a>
-                          </li>
-                        `;
-
-                        $('#searchResult').append(li);
-                        $('.hotSongList').css('display', 'none');
-                    }
-                }
-            });
-            timer = null;
-        }, 200);
-    })
-</script>
 </body>
 </html>
