@@ -41,7 +41,6 @@ section.disk::after {
 section.disk > .circle {
     width: 296px;
     height: 296px;
-
     margin: 0 auto;
     position: relative;
 }
@@ -184,8 +183,6 @@ section.disk > .circle::after {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-
-
 }
 .actions >.buttonWrapper>a{
     color: #D43E33;
@@ -203,8 +200,6 @@ section.disk > .circle::after {
     color: #FFFFFF;
     background-color: #D43E33;
 }
-
-
 
 
 
