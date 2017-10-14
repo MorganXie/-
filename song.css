@@ -31,7 +31,7 @@ section.disk::after {
     height: 137px;
     top: 0;
     left: 160px;
-    background: transparent url("http://ww1.sinaimg.cn/large/d6c04639gy1fkdhmdmoroj20800bfjrb.jpg") no-repeat center;
+    background: transparent url("https://ws1.sinaimg.cn/large/d6c04639gy1fkhn279q78j20800bfjrb.jpg") no-repeat center;
     background-size: contain;
     z-index: 3;
 }
@@ -50,7 +50,7 @@ section.disk > .circle::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent url("http://ww1.sinaimg.cn/large/d6c04639gy1fkdhmdng5zj20oo0oodha.jpg") no-repeat center;
+    background: transparent url("https://ws1.sinaimg.cn/large/d6c04639gy1fkhn27b3pzj20oo0oodha.jpg") no-repeat center;
     background-size: cover;
 
 }

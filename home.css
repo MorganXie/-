@@ -241,7 +241,7 @@ section.songs > .list .icon-sq ,.page-2>.hotSongList  .icon-sq{
 }
 
 section.Art {
-    background: transparent url(http://ww1.sinaimg.cn/large/d6c04639gy1fk9l6ndlhgj20ku0b40wb.jpg) no-repeat center;
+    background: transparent url(https://ws1.sinaimg.cn/large/d6c04639gy1fkhmvo2rr8j20ku0b40wb.jpg) no-repeat center;
     text-align: center;
     padding-top: 43px;
     background-size: cover;
@@ -415,7 +415,7 @@ section.Art > .copyRight {
     width: 100%;
     height:145px ;
     position: relative;
-    background: url("http://ww1.sinaimg.cn/large/d6c04639gy1fkgvsbos1tj20ku084mx1.jpg") ;
+    background: url("https://ws1.sinaimg.cn/large/d6c04639gy1fkhm5aad4xj20ku084mx1.jpg") ;
     background-size: cover;
 }
 .page-2>.banner::after{
