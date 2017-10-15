@@ -56,14 +56,14 @@ section.disk > .circle::before {
 }
 
 section.disk > .circle::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent url("http://ww1.sinaimg.cn/large/d6c04639gy1fkdhmdlo6zj20ds0dst8k.jpg") no-repeat center;
-    background-size: cover;
+    /*content: '';*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: transparent url("https://ww1.sinaimg.cn/large/d6c04639gy1fkdhmdlo6zj20ds0dst8k.jpg") no-repeat center;*/
+    /*background-size: cover;*/
 
 }
 

@@ -80,11 +80,15 @@ function resetPage() {
     $('.holder').html('搜索歌曲、歌手、专辑');
     $('.hotSongList').css('display', 'flex');
     $('input#search').val('');
+    $('.searchText').css('display','none');
 }
 let timer = null;
 $('input#search').on('input', function (e) {
+
     $('#searchResult').empty();
     $('.holder').html('');
+    $('.searchText').css('display','block').html('搜索"'+$(e.currentTarget).val()+'"');
+    $('.hotSongList').css('display', 'none');
     if (timer) {
         window.clearTimeout(timer);
     }
@@ -121,7 +125,7 @@ $('input#search').on('input', function (e) {
                             <a href="./song.html?id=${results[i].id}">${songs.name} - ${songs.singer}</a>
                           </li>
                         `;
-                    $('.hotSongList').css('display', 'none');
+
                     $('#searchResult').append(li);
 
                 }
