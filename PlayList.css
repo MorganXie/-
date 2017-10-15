@@ -320,6 +320,12 @@
 
 
 @media screen and (max-width: 370px) {
+    .topBar > .innerWrapper .cover {
+        width: 114px;
+        height: 114px;
+        position: relative;
+        color: #FFFFFF;
+    }
     .topBar > .innerWrapper .cover > img {
         position: absolute;
         width: 114px;
@@ -328,6 +334,7 @@
         left: 0;
         z-index: 1;
     }
+
     .bottomButton > a {
         width: 260px;
         line-height: 40px;

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c73897e-f804-4332-955a-e04177dcb88d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlayList.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/playList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlayList.css" afterPath="$PROJECT_DIR$/PlayList.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playList.html" afterPath="$PROJECT_DIR$/playList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/home.js" afterPath="$PROJECT_DIR$/scripts/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/song.html" afterPath="$PROJECT_DIR$/song.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-587">
-              <caret line="159" column="141" lean-forward="false" selection-start-line="159" selection-start-column="141" selection-end-line="159" selection-end-column="141" />
+            <state relative-caret-position="352">
+              <caret line="203" column="78" lean-forward="false" selection-start-line="203" selection-start-column="78" selection-end-line="203" selection-end-column="78" />
               <folding>
                 <element signature="n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#svg#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -59,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayList.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayList.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlayList.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="32" />
+            <state relative-caret-position="125">
+              <caret line="326" column="23" lean-forward="true" selection-start-line="326" selection-start-column="23" selection-end-line="326" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -220,8 +215,8 @@
         <option value="$PROJECT_DIR$/scripts/home.js" />
         <option value="$PROJECT_DIR$/playList.html" />
         <option value="$PROJECT_DIR$/scripts/playList.js" />
-        <option value="$PROJECT_DIR$/PlayList.css" />
         <option value="$PROJECT_DIR$/home.html" />
+        <option value="$PROJECT_DIR$/PlayList.css" />
       </list>
     </option>
   </component>
@@ -361,7 +356,7 @@
       <workItem from="1507700498432" duration="772000" />
       <workItem from="1507702274401" duration="45380000" />
       <workItem from="1507881413257" duration="3110000" />
-      <workItem from="1507896401988" duration="28686000" />
+      <workItem from="1507896401988" duration="29035000" />
     </task>
     <task id="LOCAL-00001" summary="finish">
       <created>1507379733646</created>
@@ -374,7 +369,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134404000" />
+    <option name="totallyTimeSpent" value="134753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="791" extended-state="0" />
@@ -845,18 +840,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlayList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-587">
-          <caret line="159" column="141" lean-forward="false" selection-start-line="159" selection-start-column="141" selection-end-line="159" selection-end-column="141" />
+        <state relative-caret-position="352">
+          <caret line="203" column="78" lean-forward="false" selection-start-line="203" selection-start-column="78" selection-end-line="203" selection-end-column="78" />
           <folding>
             <element signature="n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#svg#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -869,6 +856,14 @@
             <element signature="n#style#0;n#div#0;n#ol#0;n#li#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ol#0;n#li#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlayList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="326" column="23" lean-forward="true" selection-start-line="326" selection-start-column="23" selection-end-line="326" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
