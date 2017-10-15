@@ -1,0 +1,342 @@
+.topBar {
+    overflow: hidden;
+}
+
+.topBar > .innerWrapper {
+    position: relative;
+    width: 100%;
+    height: 186px;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 20px;
+    /*justify-content: space-between;*/
+
+}
+
+.topBar > .innerWrapper>.before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url("https://ws1.sinaimg.cn/large/d6c04639gy1fkhlds7r1tj20sg0sg0tq.jpg") no-repeat;
+    filter: blur(10px);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topBar > .innerWrapper::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .35);
+
+}
+
+.topBar > .innerWrapper .cover {
+    width: 126px;
+    height: 126px;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.topBar > .innerWrapper .cover > img {
+    position: absolute;
+    width: 126px;
+    height: 126px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cover > .coverText {
+    position: relative;
+    z-index: 3;
+}
+
+.topBar > .innerWrapper .cover span {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 0 8px;
+    height: 17px;
+    color: #fff;
+    font-size: 9px;
+    text-align: center;
+    line-height: 17px;
+    background-color: rgba(217, 48, 48, .8);
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+.topBar > .innerWrapper .coverText::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    z-index: -1;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), transparent);
+    padding: 0;
+}
+
+.topBar > .innerWrapper .cover svg {
+    position: absolute;
+    top: 3px;
+    right: 50px;
+}
+
+.topBar > .innerWrapper .cover p {
+    position: absolute;
+    top: 2px;
+    font-size: 12px;
+    right: 2px;
+    color: #FFFFFF;
+}
+
+.topBar > .innerWrapper .title {
+    width: 208px;
+    height: 126px;
+    color: #fefefe;
+    z-index: 3;
+    margin-left: 16px;
+
+}
+
+.topBar > .innerWrapper .title > h2 {
+    padding-top: 1px;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #fefefe;
+    height: 44px;
+}
+
+.topBar > .innerWrapper .title .Avatar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.topBar > .innerWrapper .title .Avatar > img {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.topBar > .innerWrapper .title .Avatar > p {
+    color: hsla(0, 0%, 100%, .7);
+}
+
+.Description {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    margin: 0 10px 0 15px;
+    padding-top: 10px;
+    line-height: 19px;
+    color: #666;
+}
+
+.list-tags {
+    color: #666;
+    display: flex;
+    position: relative;
+    padding-top: 10px;
+    line-height: 19px;
+    font-size: 14px;
+
+}
+
+.list-tags > a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 1px 8px;
+    font-size: 12px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.list-tags > a::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    border: 1px solid #B6B5B6;
+    border-radius: 30px;
+}
+
+.description-Text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 18px;
+
+}
+
+.description-Text.hidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 55px;
+}
+
+.description-Text > span {
+    margin-bottom: 25px;
+}
+
+.description-Text > span:last-of-type {
+    margin-bottom: 0;
+}
+
+.description-Text > svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    display: none;
+}
+
+.description-Text > svg.active {
+    display: inline-block;
+}
+
+.PlayList {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.PlayList > li.title {
+    width: 100%;
+    background: #EEEFF0;
+    padding-left: 10px;
+    line-height: 23px;
+    font-size: 12px;
+    color: #666;
+}
+
+.PlayList > .songInfo >a {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 6px 0;
+}
+
+.PlayList > .songInfo  .range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    font-size: 17px;
+    color: #999;
+}
+
+.PlayList > .songInfo  .eachSong {
+    position: relative;
+}
+
+.PlayList > .songInfo >a{
+    position: relative;
+}
+.PlayList > .songInfo >a::after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #EDEDED;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+}
+
+.PlayList > .songInfo   .eachSong > .songName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+    font-size: 17px;
+}
+
+.PlayList > .songInfo   .eachSong > .singer-Album {
+    font-size: 12px;
+    color: #888;
+}
+
+.PlayList > .songInfo   svg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    fill: #AAAAAA;
+}
+
+.bottomButton {
+    background: #FFFFFF;
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding: 7px 0;
+    bottom: 0;
+}
+
+.bottomButton > a {
+    width: 300px;
+    line-height: 40px;
+    background: #D43E33;
+    border-radius: 36px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomButton > a > svg {
+    width: 28px;
+    height: 28px;
+}
+
+
+@media screen and (max-width: 370px) {
+    .topBar > .innerWrapper .cover > img {
+        position: absolute;
+        width: 114px;
+        height: 114px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .bottomButton > a {
+        width: 260px;
+        line-height: 40px;
+        background: #D43E33;
+        border-radius: 36px;
+        font-size: 16px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

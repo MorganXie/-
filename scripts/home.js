@@ -18,6 +18,7 @@ queryPlayList.find().then(function (results) {
 
         let li = `
             <li>
+            <a href="./playList.html?id=${results[i].id}">
             <div class="cover">
               <div class="amount">
                 <svg class="icon" aria-hidden="true">
@@ -28,6 +29,7 @@ queryPlayList.find().then(function (results) {
               <img src="${eachCover.imgUrl}" alt="封面"/>
             </div>
             <p>${eachCover.text}</p>
+            </a>
           </li>
             `;
 
@@ -49,7 +51,6 @@ queryEachsong.find().then(function (results) {
         let li = `
               <li>
             <a href="./song.html?id=${results[i].id}"<h3>${eachSong.name}
-              <small></small>
             </h3>
             </a>
             <p>
